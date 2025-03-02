@@ -12,41 +12,38 @@
             width: 100%;
             height: auto;
             object-fit: cover;
-            border-radius: 10px; /* 圓角邊框（可選） */
-            margin-bottom: 10px; /* 圖片間距 */
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         /* 影片區塊樣式 */
         .video-container {
             width: 100%;
             display: flex;
-            justify-content: center; /* 影片置中 */
+            justify-content: center;
             align-items: center;
-            margin-top: 20px; /* 與圖片區隔 */
+            margin-top: 20px;
         }
 
         .video-container video {
             width: 100%;
-            max-width: 800px; /* 讓影片保持適當大小 */
+            max-width: 800px;
             height: auto;
-            border-radius: 10px; /* 圓角邊框，可選 */
+            border-radius: 10px;
+            transform: scale(0.5); /* 影片縮小 50% */
         }
     </style>
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper">
         
-        <!-- Header -->
         <header id="header">
             <div class="inner">
-                <!-- Logo -->
                 <a href="index.html" class="logo">
                     <span class="title">Pearl Yang</span>
                 </a>
 
-                <!-- Nav -->
                 <nav>
                     <ul>
                         <li><a href="#menu">Menu</a></li>
@@ -55,7 +52,6 @@
             </div>
         </header>
 
-        <!-- Menu -->
         <nav id="menu">
             <h2>Menu</h2>
             <ul>
@@ -67,13 +63,11 @@
             </ul>
         </nav>
 
-        <!-- Main Content -->
         <div id="main">
             <div class="inner">
                 <h1>Senior Shuttle - UI design</h1>
                 <p>Create UI for drivers to easily update passenger status.</p>
 
-                <!-- 圖片區塊 -->
                 <div class="image-gallery">
                     <img src="images/pic01-1.jpg" alt="Image 1">
                     <img src="images/pic01-2.jpg" alt="Image 2">
@@ -81,7 +75,6 @@
                     <img src="images/pic01-4.jpg" alt="Image 4">
                 </div>
 
-                <!-- 影片區塊 -->
                 <div class="video-container">
                     <video autoplay loop muted playsinline>
                         <source src="videos/01.mp4" type="video/mp4">
@@ -91,7 +84,6 @@
             </div>
         </div>
 
-        <!-- Footer -->
         <footer id="footer">
             <div class="inner">
                 <section>
@@ -122,5 +114,11 @@
         </footer>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></s
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
