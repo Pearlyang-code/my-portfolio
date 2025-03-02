@@ -1,36 +1,43 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="zh-TW">
 <head>
-    <title>Senior Shuttle - UI design</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Senior Shuttle - UI design</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         /* 讓圖片自動填滿頁面 */
-        .image.main img {
-            width: 100%;
-            height: auto; /* 維持比例 */
-        }
-
-        /* 或者使圖片填滿區域並裁剪 */
-        .image.main img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 讓圖片填滿容器並裁剪超出的部分 */
-        }
-
-        /* 讓所有圖片在gallery中也能自適應填滿 */
         .image-gallery img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* 保證圖片填滿容器 */
+            object-fit: cover;
+            border-radius: 10px; /* 圓角邊框（可選） */
+            margin-bottom: 10px; /* 圖片間距 */
+        }
+
+        /* 影片區塊樣式 */
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* 影片置中 */
+            align-items: center;
+            margin-top: 20px; /* 與圖片區隔 */
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 800px; /* 讓影片保持適當大小 */
+            height: auto;
+            border-radius: 10px; /* 圓角邊框，可選 */
         }
     </style>
 </head>
 <body class="is-preload">
+
     <!-- Wrapper -->
     <div id="wrapper">
+        
         <!-- Header -->
         <header id="header">
             <div class="inner">
@@ -60,18 +67,26 @@
             </ul>
         </nav>
 
-        <!-- Main -->
+        <!-- Main Content -->
         <div id="main">
             <div class="inner">
                 <h1>Senior Shuttle - UI design</h1>
                 <p>Create UI for drivers to easily update passenger status.</p>
 
-                <!-- 新增的圖片 -->
+                <!-- 圖片區塊 -->
                 <div class="image-gallery">
-                    <img src="images/pic01-1.jpg" alt="Image 1" />
-                    <img src="images/pic01-2.jpg" alt="Image 2" />
-                    <img src="images/pic01-3.jpg" alt="Image 3" />
-                    <img src="images/pic01-4.jpg" alt="Image 4" />
+                    <img src="images/pic01-1.jpg" alt="Image 1">
+                    <img src="images/pic01-2.jpg" alt="Image 2">
+                    <img src="images/pic01-3.jpg" alt="Image 3">
+                    <img src="images/pic01-4.jpg" alt="Image 4">
+                </div>
+
+                <!-- 影片區塊 -->
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/animation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
@@ -100,18 +115,12 @@
                 </section>
 
                 <ul class="copyright">
-                    <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>&copy; Untitled. All rights reserved</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
         </footer>
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+    <script src="assets/js/jquery.min.js"></s
